@@ -1,5 +1,11 @@
+import { Nav } from "./features/Nav";
+
 function App() {
-  return <div>Hello</div>;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 }
 
 export default App;
