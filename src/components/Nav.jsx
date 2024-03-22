@@ -22,7 +22,7 @@ export function Nav({ onClickShoppingBtn, cartItems }) {
     <button
       onClick={() => setShowMobileMenu((prev) => !prev)}
       type="button"
-      className="anim-click h-10 w-10 rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden "
+      className="anim-click h-10 w-10 rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
     >
       <RxHamburgerMenu size={"auto"} />
     </button>
@@ -35,9 +35,9 @@ export function Nav({ onClickShoppingBtn, cartItems }) {
         !showMobileMenu && "hidden"
       }`}
     >
-      <ul className="flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg dark:border-gray-700 dark:bg-gray-800 lg:flex-row  lg:space-x-8 lg:border-0 lg:bg-transparent lg:p-0 lg:dark:bg-transparent ">
+      <ul className="flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg lg:flex-row lg:space-x-8 lg:border-0  lg:bg-transparent lg:p-0 dark:border-gray-700 dark:bg-gray-800 lg:dark:bg-transparent ">
         {ROUTES.map((route, i) => (
-          <li key={route} className="px-5 py-1 [&:nth-child(1)]:text-red-400">
+          <li key={route} className=" py-1 [&:nth-child(1)]:text-red-400">
             <a
               href="#"
               className={`${
@@ -46,8 +46,8 @@ export function Nav({ onClickShoppingBtn, cartItems }) {
               }
               ${i > 2 && "lg:text-white"} 
               ${i > 0 && "hover:bg-gray-100 lg:hover:bg-transparent"}
-              block rounded py-2 pl-3 pr-4 text-black   dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 
-              lg:hover:text-blue-700 lg:dark:hover:bg-transparent lg:dark:hover:text-blue-500
+              block rounded py-2 pl-3 pr-4 text-black   lg:border-0 lg:p-0 lg:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 
+              dark:hover:text-white lg:dark:hover:bg-transparent lg:dark:hover:text-blue-500
 `}
             >
               {route}
@@ -61,7 +61,7 @@ export function Nav({ onClickShoppingBtn, cartItems }) {
   const ping = (
     <div className="absolute -right-1 -top-1">
       <span className="relative flex h-6 w-6">
-        <span className="opacity-65 absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400"></span>
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-65"></span>
         <span className="flex-center relative inline-flex h-6 w-6 rounded-full bg-sky-500 text-white">
           {cartItems.length}
         </span>
@@ -111,7 +111,7 @@ export function Nav({ onClickShoppingBtn, cartItems }) {
       <div className="fixed bottom-4 right-4">
         <button
           onClick={toggleThemeMode}
-          className="rounded-full bg-night-50 px-4 py-2 font-semibold text-white shadow-lg  dark:bg-white dark:text-night"
+          className="bg-night-50 dark:text-night rounded-full px-4 py-2 font-semibold text-white  shadow-lg dark:bg-white"
         >
           {!theme || theme === "light" ? <BiMoon /> : <BiSun />}
         </button>

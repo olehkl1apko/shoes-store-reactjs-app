@@ -31,12 +31,11 @@ export const ShoeDetail = ({ shoe, onClickAdd }) => {
             !isBtnDisabled && "anim-click"
           } flex-center dark:hover:bg-night-50 h-14 w-44 bg-black  text-white hover:bg-gray-900 enabled:active:bg-gray-700 disabled:animate-none dark:bg-white dark:text-black  dark:hover:text-white`}
         >
-          Add to bag
+          {!isBtnDisabled ? "Add to bag" : "Choose QTY & Size"}
         </button>
-
-        <a href="#" className="text-lg font-bold underline underline-offset-4">
+        {/* <a href="#" className="text-lg font-bold underline underline-offset-4">
           View details
-        </a>
+        </a> */}
       </div>
     </div>
   );
@@ -44,7 +43,6 @@ export const ShoeDetail = ({ shoe, onClickAdd }) => {
   return (
     <>
       <div className="mt-10 flex-1 space-y-8 lg:mt-0 ">{shoeDescription}</div>
-      {/* ml-28 to make it align with the menu */}
       <div className="flex-1 lg:-mt-52  lg:ml-28">{shoeImage}</div>
     </>
   );
