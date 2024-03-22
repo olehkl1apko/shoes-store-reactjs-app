@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import aspectRatio from "@tailwindcss/aspect-ratio";
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -13,13 +12,13 @@ export default {
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" }, // Adjust the floating height
+          "50%": { transform: "translateY(-30px)" }, // Adjust the floating height
         },
       },
       animation: {
-        float: "float 4s infinite", // Adjust the duration
+        float: "float 3s infinite", // Adjust the duration
       },
     },
   },
-  plugins: [aspectRatio],
+  plugins: [],
 };
