@@ -40,7 +40,7 @@ function App() {
         />
       </div>
       <div className="flex items-center space-x-10">
-        <button className="transform active:scale-75 transition-transform hover:bg-gray-900 active:bg-gray-700 flex justify-center items-center h-14 w-44 bg-black text-white">
+        <button className="anim-click bg-black hover:bg-gray-900 active:bg-gray-700 flex justify-center items-center h-14 w-44  text-white">
           Add to bag
         </button>
 
@@ -59,7 +59,8 @@ function App() {
         </div>
       </div>
       {/*flex items-center justify-between flex-col xl:flex-row*/}
-      <div className="flex flex-wrap mt-10 gap-8 justify-between">
+
+      <div className="justify-between grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[repeat(3,25%)] gap-8 mt-10">
         {SHOE_LIST.map((shoe) => (
           <Card
             key={shoe.id}
@@ -73,7 +74,7 @@ function App() {
   );
 
   return (
-    <div className="px-8 lg:px-24">
+    <div className="px-4  lg:px-8 xl:px-24">
       <Nav />
       <div className=" lg:mt-5 flex lg:flex-row flex-col-reverse">
         <div className=" flex-1 space-y-8 mt-10 lg:mt-0 ">{shoeDetail}</div>
