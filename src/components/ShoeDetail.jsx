@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Select } from "../components/Select";
-import { QTY, SIZES } from "../constant";
+import { QTY, SIZES } from "../constants";
 
 export const ShoeDetail = ({ shoe, onClickAdd }) => {
   const [qty, setQty] = useState();

@@ -1,7 +1,7 @@
-import nike1 from "../assets/n1.png";
-import nike2 from "../assets/n2.png";
-import nike3 from "../assets/n3.png";
-import nike4 from "../assets/n4.png";
+import nike1 from "../assets/n1-min.png";
+import nike2 from "../assets/n2-min.png";
+import nike3 from "../assets/n3-min.png";
+import nike4 from "../assets/n4-min.png";
 
 export const SHOE_LIST = [
   {
@@ -41,3 +41,7 @@ export const SHOE_LIST = [
     price: 110,
   },
 ];
+
+export const SIZES = [41, 42, 43, 44, 45, 46, 47];
+
+export const QTY = [1, 2, 3, 4];

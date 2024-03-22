@@ -1,4 +1,4 @@
-import { SHOE_LIST } from "../constant";
+import { SHOE_LIST } from "../constants";
 import { Card } from "./Card";
 
 export const NewArrivalSection = ({ onClickCard }) => {

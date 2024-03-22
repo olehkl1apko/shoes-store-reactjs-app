@@ -4,7 +4,7 @@ import { Nav } from "./components/Nav";
 import { NewArrivalSection } from "./components/NewArrivalSection";
 import { ShoeDetail } from "./components/ShoeDetail";
 import { Sidebar } from "./components/Sidebar";
-import { SHOE_LIST } from "./constant";
+import { SHOE_LIST } from "./constants";
 
 function App() {
   const [currShoe, setCurrShoe] = useState(SHOE_LIST[0]);
@@ -53,7 +53,7 @@ function App() {
   };
 
   return (
-    <div className="1000 animate-fadeIn p-10 dark:bg-night  xl:px-24">
+    <div className="1000 dark:bg-night animate-fadeIn p-10  xl:px-24">
       <Nav onClickShoppingBtn={toggleSidebar} cartItems={cartItems} />
       <Sidebar onClickClose={toggleSidebar} isOpen={isSidebarOpen}>
         <Cart cartItems={cartItems} onClickTrash={removeFromCart} />

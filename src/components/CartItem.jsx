@@ -1,5 +1,5 @@
 import { CiTrash } from "react-icons/ci";
-import { QTY, SIZES } from "../constant";
+import { QTY, SIZES } from "../constants";
 import { Select } from "./Select";
 
 export const CartItem = ({
