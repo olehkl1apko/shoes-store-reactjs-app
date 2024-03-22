@@ -35,9 +35,9 @@ export const ShoeDetail = ({ shoe }) => {
 
   return (
     <>
-      <div className=" flex-1 space-y-8 mt-10 lg:mt-0 ">{shoeDescription}</div>
+      <div className="flex-1 space-y-8 mt-10 lg:mt-0 ">{shoeDescription}</div>
       {/* ml-28 to make it align with the menu */}
-      <div className="lg:-mt-52 flex-1 z-[-1] lg:ml-28">{shoeImage}</div>
+      <div className="lg:-mt-52 flex-1  lg:ml-28">{shoeImage}</div>
     </>
   );
 };
